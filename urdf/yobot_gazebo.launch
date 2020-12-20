@@ -1,6 +1,6 @@
 <launch>
   <!-- We resume the logic in gazebo_ros package empty_world.launch, -->
-  <param name="robot_description" command="$(find xacro)/xacro $(find project)/urdf/yobot.xacro"/>
+  <param name="robot_description" command="$(find xacro)/xacro $(find yobot)/urdf/yobot.xacro"/>
   <include file="$(find gazebo_ros)/launch/empty_world.launch"/>
   <!-- Spawn dd_robot into Gazebo -->
   <node

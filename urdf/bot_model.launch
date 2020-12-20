@@ -1,5 +1,5 @@
 <launch>
-    <param name="robot_description" textfile="$(find project)urdf/project.urdf" />
+    <param name="robot_description" textfile="$(find yobot)urdf/project.urdf" />
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
     
     </include>
@@ -19,11 +19,11 @@
     
     <node pkg="move_base" type="move_base" name="move_base" output="screen">
       <param name="controller_frequency" value="10.0" />
-      <rosparam file="$(find project)/config/costmap_common_params.yaml" command="load" ns="global_costmap"/>
-      <rosparam file="$(find project)/config/costmap_common_params.yaml" command="load" ns="local_costmap"/>
-      <rosparam file="$(find project)/config/local_costmap_params.yaml" command="load" />
-      <rosparam file="$(find project)/config/global_costmap_params.yaml" command="load" />
-      <rosparam file="$(find project)/config/trajectory_planner.yaml" command="load" />
+      <rosparam file="$(find yobot)/config/costmap_common_params.yaml" command="load" ns="global_costmap"/>
+      <rosparam file="$(find yobot)/config/costmap_common_params.yaml" command="load" ns="local_costmap"/>
+      <rosparam file="$(find yobot)/config/local_costmap_params.yaml" command="load" />
+      <rosparam file="$(find yobot)/config/global_costmap_params.yaml" command="load" />
+      <rosparam file="$(find yobot)/config/trajectory_planner.yaml" command="load" />
     </node>
 
 

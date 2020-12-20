@@ -1,7 +1,7 @@
 
 <launch>
 
-<param name="robot_description" textfile="$(find project)/urdf/project.urdf" />
+<param name="robot_description" textfile="$(find yobot)/urdf/project.urdf" />
 <include file="$(find gazebo_ros)/launch/empty_world.launch"/>
 
 <!-- Spawn into Gazebo -->

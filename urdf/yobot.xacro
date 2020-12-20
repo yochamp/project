@@ -13,9 +13,9 @@
   <xacro:property name="chassis_height" value="0.5" />
   <xacro:property name="chassis_mass" value="0.5" />
 
-  <xacro:include filename="$(find project)/urdf/project.gazebo" />
-  <xacro:include filename="$(find project)/urdf/materials.xacro" />
-  <xacro:include filename="$(find project)/urdf/macros.xacro" />
+  <xacro:include filename="$(find yobot)/urdf/project.gazebo" />
+  <xacro:include filename="$(find yobot)/urdf/materials.xacro" />
+  <xacro:include filename="$(find yobot)/urdf/macros.xacro" />
   
 
     <link name="chassis">
